@@ -96,3 +96,19 @@ void geraTabuada(int num){
         printf("%d * %d = %d\n",num,i,num*i);
     }
 }
+
+void addIntArrayItemsInfSup(int vetor[], int tam, int limPositivo, int limNegativo){
+    int i, aux;
+
+    srand(time(NULL));
+
+    if(limNegativo>limPositivo){
+        aux=limPositivo;
+        limPositivo=limNegativo;
+        limNegativo=aux;
+    }
+
+    for(i=0;i<tam;i++){
+        vetor[i] = rand() % (limPositivo + limNegativo + 1) - limNegativo;
+    }
+}
