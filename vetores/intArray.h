@@ -87,3 +87,12 @@ void addIntArrayItemsFrom1WithoutRepeatedNumber(int vetor[], int tam, int lim){
         }
     }
 }
+
+void geraTabuada(int num){
+    int i;
+
+    printf("\n\nTABUADA DO %d\n", num);
+    for(i=0;i<=10;i++){
+        printf("%d * %d = %d\n",num,i,num*i);
+    }
+}
